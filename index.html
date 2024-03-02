@@ -88,10 +88,23 @@
       padding: 15px;
       text-align: center;
     }
-
-    li {
-      padding: 8px;
-      list-style-type: circle;
+    #listSummary li{
+      list-style-type: none;
+      padding-left: 8px;
+    }
+      #listSummary li::marker{
+        content: "✍";
+      }
+    
+    #projectDesc::selection{
+      background-color: rgb(132, 255, 121);
+    }
+    .roles{
+      list-style-type: lower-alpha;
+    
+    }
+    .roles li{
+      padding: 1rem;
     }
 
     .footer_icon {
@@ -134,7 +147,7 @@
     <!-- Home Section -->
     <section id="home">
       <h2 class="heading">Professional Summary</h2>
-      <ul>
+      <ul id="listSummary">
         <li>Having 1 years of experience in developing Single page Web Application using Angular 8, HTML5, CSS3,
           Bootstrap
           5, Javascript, Typescript</li>
@@ -209,11 +222,11 @@
             <i>2021-1st-July till <u>present</u></i>
           </span>
         </p>
-        <p><b>Project Description:</b> This project is mainly usd for student management in colleges, where it helps to
+        <p id="projectDesc"><b>Project Description:</b> This project is mainly usd for student management in colleges, where it helps to
           manage student record like <br> registration, student update, and to see all the list of academic activities
           like score card and attendance</p>
         <h3>Roles and Responsibilities</h3>
-        <ul>
+        <ol class="roles">
           <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
           <li>Work closely with backend developers for code integration</li>
           <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -222,7 +235,7 @@
           <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint retrospectivve
             meetings</li>
           <li>involved in fixing technical issues in production environment</li>
-        </ul>
+        </ol>
       </section>
       <hr>
 
