@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #container {
+        margin: 10px auto;
+      }
+
+      /* Card One... */
+      #cardOne {
+        width: 500px;
+        margin: 10px auto;
+        padding: 40px;
+      }
+
+      #cardOne img {
+        width: 200px;
+        height: 200px;
+      }
+      #image {
+        display: inline-block;
+      }
+      #image p {
+        margin-left: 30px;
+      }
+      #content {
+        line-height: 25px;
+        margin-left: 40px;
+        width: 250px;
+        display: inline-block;
+      }
+
+      /* Card Two... */
+      #cardTwo {
+        font-family: "Poppins", sans-serif;
+        border-radius: 20px;
+        width: 400px;
+        margin: 10px auto;
+        padding: 5px 5px 5px 20px;
+        background-color: rgb(49, 47, 47);
+      }
+      #cardTwo h2 {
+        letter-spacing: 2px;
+        color: rgb(104, 209, 212);
+      }
+      #cardTwo div {
+        width: 250px;
+        display: inline-block;
+        padding-right: 30px;
+      }
+      #cardTwo p {
+        color: rgb(213, 223, 223);
+      }
+      img {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <section id="cardOne">
+        <div id="image">
+          <img src="assets/femaledeveloper.png" id="image" alt="" />
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>Powered by</small> <br /><i
+              class="fa fa-spinner"
+              aria-hidden="true"
+            ></i>
+            JSoftwareLabs
+          </p>
+        </div>
+        <div id="content">
+          <h2>Compare Text Online</h2>
+
+          <ul>
+            <li>Compare text online free</li>
+            <li>Supports large file comparison</li>
+            <li>Ignore order and namespaces</li>
+            <li>Side by side diff view</li>
+            <li>Get results in tabular format for quick reference</li>
+            <li>TEXT diff tool</li>
+            <li>REST API</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Card Two... -->
+      <section id="cardTwo">
+        <div>
+          <h2>
+            2 Stocks <br />
+            Recommendation <br />
+            Weekely
+          </h2>
+          <p>
+            Midcap Stocks Gaining <br />
+            Momentum after 30-40% fall <br />
+            from 52 Week High
+          </p>
+        </div>
+        <img src="assets/arrowImage.webp" width="50px" height="50px" alt="" />
+      </section>
+    </div>
+  </body>
+</html>

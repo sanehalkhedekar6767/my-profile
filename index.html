@@ -5,299 +5,199 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Profile</title>
-  <!-- CDN Link -->
+  <!-- CDN Link...font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Linking assets folder-->
   <link rel="shortcut icon" href="assets/profileFemale.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap"
-    rel="stylesheet">
-  <style>
-    * {
-      font-family: "Poppins", sans-serif;
-      box-sizing: border-box;
-    }
-
-    header {
-      padding: 10px;
-      border: 2px solid rgb(26, 121, 124);
-      background-color: rgb(216, 244, 245);
-      font-family: "Roboto", sans-serif;
-    }
-    i{
-      color:rgb(71, 16, 16) ;
-    }
-
-    #resume {
-      color: rgb(105, 92, 32);
-      font-weight: bolder;
-      text-decoration: none;
-    }
-
-    nav {
-      padding: 10px;
-      margin-top: 10px;
-      border: 2px solid rgb(153, 153, 101);
-      background-color: rgb(255, 255, 202);
-    }
-
-    .navbar {
-      margin-right: 30px;
-      text-decoration: none;
-      color: rgb(124, 57, 57);
-      font-family: "Roboto", sans-serif;
-      border-right: 2px solid;
-      padding-right: 20px;
-    }
-
-    .heading {
-      color: rgb(71, 16, 16);
-      /* font-style: oblique; */
-      text-shadow: 2px 5px 3px rgba(59, 105, 102, 0.65);
-      font-family: "Roboto", sans-serif;
-    }
-
-    #duration {
-      margin-left: 100px;
-    }
-
-    .header-info {
-      margin-right: 40px;
-      margin-left: 10px;
-    }
-
-    #resume-text {
-      margin-left: 10px;
-    }
-
-    table,
-    tr,
-    th,
-    td {
-      border: 2px solid rgb(46, 0, 0);
-      border-collapse: collapse;
-      background-color: rgb(216, 249, 250);
-      box-shadow: 14px 11px 17px -1px rgba(132, 255, 247, 0.58);
-      -webkit-box-shadow: 14px 11px 17px -1px rgba(56, 87, 88, 0.58);
-    }
-
-    th,
-    td {
-      padding: 15px;
-      text-align: center;
-    }
-    #listSummary li{
-      list-style-type: none;
-      padding-left: 8px;
-    }
-      #listSummary li::marker{
-        content: "✍";
-      }
-    
-    #projectDesc::selection{
-      background-color: rgb(132, 255, 121);
-    }
-    .roles{
-      list-style-type: lower-alpha;
-    
-    }
-    .roles li{
-      padding: 1rem;
-    }
-
-    .footer_icon {
-      margin: 0px 10px 0px 10px;
-    }
-
-    #techstack {
-      width: 50%;
-    }
-  </style>
-
+  <!-- Linking CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+ <!-- Header Section -->
+ <header>
+  <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+  <span class="header-info">Sanehal Khedekar </span>
+  <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+  <span class="header-info">876 751 9187 </span>
+  <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+  <span class="header-info">sanehalkhedekar6767@gmail.com </span>
+  <a href="assets/resume.pdf" download id="resume"> <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span
+      id="resume-text">RESUME</span> </a>
+</header>
 
-  <!-- Header Section -->
-  <header>
-    <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-    <span class="header-info">Sanehal Khedekar </span>
-    <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
-    <span class="header-info">876 751 9187 </span>
-    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-    <span class="header-info">sanehalkhedekar6767@gmail.com </span>
-    <a href="assets/resume.pdf" download id="resume"> <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span> </a>
-  </header>
+<!-- Navigation Section  -->
+<nav id="navSection">
+  <ul>
+    <li><a href="#home">HOME</a> </li>
+    <li><a href="#techStack">TECH STACK</a> </li>
+    <li><a href="#project">PROJECTS</a></li>
+    <li><a href="#education">EDUCATION</a></li>
+    <li><a href="personalDetails.html" target="_blank">PERSONAL DETAILS</a></li>
+    <li> <a href="others.html" target="_blank">OTHERS</a></li>
+  </ul>
+</nav>
+<hr>
 
-  <!-- Navigation Section  -->
-  <nav>
-    <a href="#home" class="navbar">HOME</a>
-    <a href="#techStack" class="navbar">TECH STACK</a>
-    <a href="#project" class="navbar">PROJECTS</a>
-    <a href="#education" class="navbar">EDUCATION</a>
-    <a href="personalDetails.html" target="_blank" class="navbar">PERSONAL DETAILS</a>
-    <a href="others.html" target="_blank" class="navbar">OTHERS</a>
-  </nav>
-  <hr>
+<!-- Main Section -->
+<section id="container">
+  <!-- Home Section -->
+  <section id="home">
+    <h2 class="heading">Professional Summary</h2>
+    <ul id="listSummary">
+      <li>Having 1 years of experience in developing Single page Web Application using Angular 8, HTML5, CSS3,
+        Bootstrap
+        5, Javascript, Typescript</li>
+      <li>Experience on working with version control system - GIT and GitHub</li>
+      <li>Experience working with JIRA for user stories and bug tracking</li>
+      <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
+      <li>Working exposure on ID's like VS Code and Notepad++</li>
+      <li>Good working experience under Agile methodologies environment</li>
+      <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
+      <li>Knowledge of NodeJS</li>
+      <li>Ability to work with people at all levels in the program</li>
+    </ul>
+    <hr>
 
-  <!-- Main Section -->
-  <section>
-    <!-- Home Section -->
-    <section id="home">
-      <h2 class="heading">Professional Summary</h2>
-      <ul id="listSummary">
-        <li>Having 1 years of experience in developing Single page Web Application using Angular 8, HTML5, CSS3,
-          Bootstrap
-          5, Javascript, Typescript</li>
-        <li>Experience on working with version control system - GIT and GitHub</li>
-        <li>Experience working with JIRA for user stories and bug tracking</li>
-        <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
-        <li>Working exposure on ID's like VS Code and Notepad++</li>
-        <li>Good working experience under Agile methodologies environment</li>
-        <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
-        <li>Knowledge of NodeJS</li>
-        <li>Ability to work with people at all levels in the program</li>
+    <!-- Technology stack section -->
+    <section id="techStack">
+      <h2 class="heading">My Technology Stack</h2>
+      <table border=1 class="table">
+        <thead>
+          <tr>
+            <th>Sr.No</th>
+            <th>Technology Stack</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CSS</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>JavaScript</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Angular</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr>
+
+    <!-- Project Section -->
+    <section id="project">
+      <h2 class="heading">Projects</h2>
+      <p><b>Name: <u> Student Management</u></b></p>
+      <p><b><u>Environment:</u></b>
+      <ul>
+        <li>Angular</li>
+        <li> React</li>
+        <li>Java</li>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>GitHub</li>
+        <li>Agile</li>
+        <li>JIRA </li>
       </ul>
-      <hr>
+      </p>
+      <p><b>Team Size : </b> 06 <span id="duration">
+          <b> Duration:</b>
+          <i>2021-1st-July till <u>present</u></i>
+        </span>
+      </p>
+      <p id="projectDesc"><b>Project Description:</b> This project is mainly usd for student management in colleges,
+        where it helps to
+        manage student record like <br> registration, student update, and to see all the list of academic activities
+        like score card and attendance</p>
+      <h3>Roles and Responsibilities</h3>
+      <ol class="roles">
+        <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
+        <li>Work closely with backend developers for code integration</li>
+        <li>Identifying and troubleshooting issues in front end codebase</li>
+        <li>Worked in GIT as a version control</li>
+        <li>Used JIRA for bug tracking</li>
+        <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint retrospectivve
+          meetings</li>
+        <li>involved in fixing technical issues in production environment</li>
+      </ol>
+    </section>
+    <hr>
 
-      <!-- Technology stack section -->
-      <section id="techStack">
-        <h2 class="heading">My Technology Stack</h2>
-        <table border=1 class="table">
-          <thead>
-            <tr>
-              <th>Sr.No</th>
-              <th>Technology Stack</th>
-              <th>Rating</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>HTML</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>CSS</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>JavaScript</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Angular</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <hr>
-
-      <!-- Project Section -->
-      <section id="project">
-        <h2 class="heading">Projects</h2>
-        <p><b>Name: <u> Student Management</u></b></p>
-        <p><b><u>Environment:</u></b>
-        <ul>
-          <li>Angular</li>
-          <li> React</li>
-          <li>Java</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>GitHub</li>
-          <li>Agile</li>
-          <li>JIRA </li>
-        </ul>
-        </p>
-        <p><b>Team Size : </b> 06 <span id="duration">
-            <b> Duration:</b>
-            <i>2021-1st-July till <u>present</u></i>
-          </span>
-        </p>
-        <p id="projectDesc"><b>Project Description:</b> This project is mainly usd for student management in colleges, where it helps to
-          manage student record like <br> registration, student update, and to see all the list of academic activities
-          like score card and attendance</p>
-        <h3>Roles and Responsibilities</h3>
-        <ol class="roles">
-          <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
-          <li>Work closely with backend developers for code integration</li>
-          <li>Identifying and troubleshooting issues in front end codebase</li>
-          <li>Worked in GIT as a version control</li>
-          <li>Used JIRA for bug tracking</li>
-          <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint retrospectivve
-            meetings</li>
-          <li>involved in fixing technical issues in production environment</li>
-        </ol>
-      </section>
-      <hr>
-
-      <!-- Education Section -->
-      <section id="education">
-        <h2 class="heading">My Educational Details</h2>
-        <table border="1" class="table">
-          <thead>
-            <tr>
-              <th>Qualification</th>
-              <th>School/College</th>
-              <th>Board/University</th>
-              <th>Year</th>
-              <th>Percentage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>BTech</td>
-              <td>Fabtech Technical Campus, College of Engineering and Research,</td>
-              <td>DBATU University</td>
-              <td>Pursuing</td>
-              <td>87%</td>
-            </tr>
-            <tr>
-              <td>HSC</td>
-              <td>Govt. Girls Higher Secondary Institute, J&K</td>
-              <td>JK Board</td>
-              <td>2020</td>
-              <td>98%</td>
-            </tr>
-            <tr>
-              <td>SSC</td>
-              <td>Khalsa Higher Secondary Institute, J&K</td>
-              <td>JK Board</td>
-              <td>2018</td>
-              <td>94.4%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="heading">My Educational Details</h2>
+      <table border="1" class="table">
+        <thead>
+          <tr>
+            <th>Qualification</th>
+            <th>School/College</th>
+            <th>Board/University</th>
+            <th>Year</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BTech</td>
+            <td>Fabtech Technical Campus, College of Engineering and Research,</td>
+            <td>DBATU University</td>
+            <td>Pursuing</td>
+            <td>87%</td>
+          </tr>
+          <tr>
+            <td>HSC</td>
+            <td>Govt. Girls Higher Secondary Institute, J&K</td>
+            <td>JK Board</td>
+            <td>2020</td>
+            <td>98%</td>
+          </tr>
+          <tr>
+            <td>SSC</td>
+            <td>Khalsa Higher Secondary Institute, J&K</td>
+            <td>JK Board</td>
+            <td>2018</td>
+            <td>94.4%</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </section>
-  <br>
-  <hr>
+</section>
+<br>
+<hr>
 
-  <!-- Footer Section -->
-  <footer>
-    <b>Follow me on:</b>
-    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram footer_icon fa-lg"
-        aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/sanehal-bharat-khedekar-252750256/" target="_blank"> <i
-        class="fa fa-linkedin footer_icon fa-lg" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-square footer_icon fa-lg"
-        aria-hidden="true"></i></a>
-  </footer>
-  <hr>
+<!-- Footer Section -->
+<footer>
+  <b>Follow me on:</b>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram footer_icon fa-lg"
+      aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/in/sanehal-bharat-khedekar-252750256/" target="_blank"> <i
+      class="fa fa-linkedin footer_icon fa-lg" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-square footer_icon fa-lg"
+      aria-hidden="true"></i></a>
+</footer>
+<hr>
 
-  <!-- Copyright Section -->
-  <section>
-    Copyright &copy; 2024 Sanehal Khedekar Personal Details, Inc. All rights reserved.
-  </section>
+<!-- Copyright Section -->
+<section>
+  Copyright &copy; 2024 Sanehal Khedekar Personal Details, Inc. All rights reserved.
+</section>
+<!-- Chat Icon -->
+<section id="icon"><img src="assets/Chat.png" id="chat" alt=""><img src="assets/whatsappLogo.png" alt=""></section>
 </body>
 
 </html>
