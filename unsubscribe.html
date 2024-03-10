@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsubscribe Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            background-color: rgb(238, 238, 238);
+        }
+
+        .container {
+            border-radius: 10px;
+            width: 320px;
+            height: 500px;
+            margin: auto;
+            padding: 10px;
+            font-family: "Roboto", sans-serif;
+            background-color: white;
+            box-shadow: 14px 11px 17px -1px rgba(198, 199, 199, 0.671);
+            -webkit-box-shadow: 14px 11px 17px -1px rgba(132, 139, 139, 0.58);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-left: 10px;
+        }
+
+        #text {
+            color: white;
+            border: 2px solid rgb(70, 164, 252);
+            border-radius: 10px;
+            background-color: rgb(70, 164, 252);
+            margin: 10px 12px;
+            padding: 15px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #fillDetails {
+            margin: 10px;
+        }
+
+        .label {
+            margin: 10px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .inputBox {
+            margin: 10px;
+            width: 280px;
+            background-color: rgb(228, 225, 225);
+            border: 2px solid rgb(228, 225, 225);
+            border-radius: 6px;
+        }
+        #emailBox {
+            height: 20px;
+        }
+
+        #unsubBox {
+            height: 30px;
+            padding: 5px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #btn {
+            position: relative;
+            left: 215px;
+            padding: 2px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: rgb(228, 225, 225);
+            border: 2px solid rgb(228, 225, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Subscriber</h2>
+        <hr />
+        <textarea name="" id="text" cols="35" rows="10">
+We're sorry to see you go, but hey, no hard feelings, hopefully we will see you back one day.
+Pease fill in your email address in order to unsubscribe from the list.
+You will receive an email to confirm your unsubscription, just to make sure this is not an accident or somebody else tries to unsubscribe you.
+        </textarea>
+        <section id="fillDetails">
+            <label for="" class="label" >Email<span>*</span></label>
+            <br />
+            <input type="email" class="inputBox" id="emailBox" />
+            <br />
+            <label for="" class="label">Unsubscribe reason</label>
+            <br />
+            <textarea class="inputBox" id="unsubBox" name="" placeholder="Unsubscribe reason" id="" cols="35"
+                rows="3"></textarea>
+            <br />
+            <button type="button" id="btn">Unsubscribe</button>
+        </section>
+    </div>
+</body>
+
+</html>
